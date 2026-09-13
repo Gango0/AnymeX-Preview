@@ -201,7 +201,7 @@ jobs:
               echo ""
               echo "✅ Beta rename completed successfully"
               echo "   Package: com.ryan.anymex → com.ryan.anymexbeta"
-              echo "   App Name: AnymeX → AnymeX β"
+              echo "   App Name: AnymeX → AnymeX Beta"
               echo "   Pubspec Version: $PUBSPEC_VERSION"
               echo "   Display Version: $DISPLAY_VERSION"
             else
@@ -270,7 +270,7 @@ jobs:
           echo "────────────────────────────────────────────"
 
           # Check main.dart for the app title
-          if grep -q 'title: "AnymeX β"' lib/main.dart 2>/dev/null; then
+          if grep -q 'title: "AnymeX Beta"' lib/main.dart 2>/dev/null; then
             echo "✅ MaterialApp title in lib/main.dart"
           else
             echo "❌ MaterialApp title NOT updated in lib/main.dart"
@@ -301,7 +301,7 @@ jobs:
           fi
 
           # Check AndroidManifest app name
-          if grep -q 'android:label="AnymeX β"' android/app/src/main/AndroidManifest.xml 2>/dev/null; then
+          if grep -q 'android:label="AnymeX Beta"' android/app/src/main/AndroidManifest.xml 2>/dev/null; then
             echo "✅ App name in AndroidManifest.xml"
           else
             echo "❌ App name NOT updated in AndroidManifest.xml"
@@ -350,7 +350,7 @@ jobs:
           fi
 
           # Check Info.plist app name
-          if grep -q "<string>AnymeX β</string>" ios/Runner/Info.plist 2>/dev/null; then
+          if grep -q "<string>AnymeX Beta</string>" ios/Runner/Info.plist 2>/dev/null; then
             echo "✅ App name in Info.plist"
           else
             echo "❌ App name NOT updated in Info.plist"
@@ -385,7 +385,7 @@ jobs:
 
           # Check macOS Info.plist
           if [ -f "macos/Runner/Info.plist" ]; then
-            if grep -q "<string>AnymeX β</string>" macos/Runner/Info.plist 2>/dev/null; then
+            if grep -q "<string>AnymeX Beta</string>" macos/Runner/Info.plist 2>/dev/null; then
               echo "✅ App name in Info.plist"
             else
               echo "❌ App name NOT updated in Info.plist"
@@ -404,7 +404,7 @@ jobs:
 
           # Check my_application.cc
           if [ -f "linux/my_application.cc" ]; then
-            if grep -q '"AnymeX β"' linux/my_application.cc 2>/dev/null; then
+            if grep -q '"AnymeX Beta"' linux/my_application.cc 2>/dev/null; then
               echo "✅ App name in my_application.cc"
             else
               echo "❌ App name NOT updated in my_application.cc"
@@ -442,7 +442,7 @@ jobs:
               ERRORS=$((ERRORS + 1))
             fi
 
-            if grep -q 'VALUE "ProductName", "AnymeX β"' windows/runner/Runner.rc 2>/dev/null; then
+            if grep -q 'VALUE "ProductName", "AnymeX Beta"' windows/runner/Runner.rc 2>/dev/null; then
               echo "✅ Product name in Runner.rc"
             else
               echo "❌ Product name NOT updated in Runner.rc"
@@ -709,7 +709,7 @@ jobs:
           # Set the app name for the .desktop file
           APP_NAME="AnymeX"
           if [[ "${{ github.ref_name }}" == *"-beta" ]]; then
-            APP_NAME="AnymeX β"
+            APP_NAME="AnymeX Beta"
           fi
           
           cat > AppDir/anymex.desktop << EOF
@@ -799,13 +799,13 @@ jobs:
           
           # Fix Inno Setup script for beta builds
           # Note: rename_app.sh already sets inno_bundle name in pubspec.yaml,
-          # so the .iss already has the correct display name (AnymeX β).
+          # so the .iss already has the correct display name (AnymeX Beta).
           # We only need to fix the exe filename reference since inno_bundle uses
           # the display name for the exe but CMake outputs anymex_beta.exe.
           if ("${{ github.ref_name }}" -like "*-beta") {
             Write-Host "Fixing installer for beta build..."
             $content = Get-Content $issFile -Raw
-            # Fix ALL exe references: inno_bundle uses display name (AnymeX β.exe)
+            # Fix ALL exe references: inno_bundle uses display name (AnymeX Beta.exe)
             # but CMake outputs anymex_beta.exe. Use broad regex to catch both.
             $content = $content -replace 'AnymeX[^a-zA-Z0-9]*?\.exe', 'anymex_beta.exe'
             Set-Content $issFile -Value $content -NoNewline
@@ -861,7 +861,7 @@ jobs:
           # Set DMG volume name for beta builds
           DMG_VOL_NAME="$APP_NAME"
           if [[ "${{ github.ref_name }}" == *"-beta" ]]; then
-            DMG_VOL_NAME="AnymeX β"
+            DMG_VOL_NAME="AnymeX Beta"
           fi
 
           echo "📦 Creating DMG: ${APP_NAME}.dmg with volume name: ${DMG_VOL_NAME}"

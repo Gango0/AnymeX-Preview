@@ -396,19 +396,19 @@ jobs:
 
           # Dart
           echo ""; echo "🎯 DART"
-          check "MaterialApp title" grep -q 'title: "AnymeX α"' lib/main.dart
+          check "MaterialApp title" grep -q 'title: "AnymeX Alpha"' lib/main.dart
 
           # Android
           echo ""; echo "📱 ANDROID"
           check "Package name in build.gradle"   grep -q "com.ryan.anymexalpha" android/app/build.gradle
           check "Package in AndroidManifest.xml" grep -q 'package="com.ryan.anymexalpha"' android/app/src/main/AndroidManifest.xml
-          check "App name in AndroidManifest.xml" grep -q 'android:label="AnymeX α"' android/app/src/main/AndroidManifest.xml
+          check "App name in AndroidManifest.xml" grep -q 'android:label="AnymeX Alpha"' android/app/src/main/AndroidManifest.xml
           check "Kotlin package dir exists" test -d "android/app/src/main/kotlin/com/ryan/anymexalpha"
 
           # iOS
           echo ""; echo "🍎 iOS"
           check "Bundle ID in project.pbxproj" grep -q "PRODUCT_BUNDLE_IDENTIFIER = com.ryan.anymexalpha" ios/Runner.xcodeproj/project.pbxproj
-          check "App name in Info.plist"        grep -q "<string>AnymeX α</string>" ios/Runner/Info.plist
+          check "App name in Info.plist"        grep -q "<string>AnymeX Alpha</string>" ios/Runner/Info.plist
 
           # macOS
           echo ""; echo "🖥️  macOS"
@@ -419,14 +419,14 @@ jobs:
 
           # Linux
           echo ""; echo "🐧 LINUX"
-          [ -f "linux/my_application.cc" ] && check "App name in my_application.cc" grep -q '"AnymeX α"' linux/my_application.cc || echo "⚠️  my_application.cc not found (skipping)"
+          [ -f "linux/my_application.cc" ] && check "App name in my_application.cc" grep -q '"AnymeX Alpha"' linux/my_application.cc || echo "⚠️  my_application.cc not found (skipping)"
           [ -f "linux/CMakeLists.txt" ]    && check "App ID in CMakeLists.txt"      grep -q 'set(APPLICATION_ID "com.ryan.anymexalpha")' linux/CMakeLists.txt || echo "⚠️  CMakeLists.txt not found (skipping)"
 
           # Windows
           echo ""; echo "🪟 WINDOWS"
           [ -f "windows/runner/Runner.rc" ] && {
             check "Binary name in Runner.rc"   grep -q '"anymex_alpha"' windows/runner/Runner.rc
-            check "Product name in Runner.rc"  grep -q 'VALUE "ProductName", "AnymeX α"' windows/runner/Runner.rc
+            check "Product name in Runner.rc"  grep -q 'VALUE "ProductName", "AnymeX Alpha"' windows/runner/Runner.rc
           } || echo "⚠️  Runner.rc not found (skipping)"
           [ -f "windows/CMakeLists.txt" ] && check "Binary name in CMakeLists.txt" grep -q 'set(BINARY_NAME "anymex_alpha")' windows/CMakeLists.txt || echo "⚠️  CMakeLists.txt not found (skipping)"
 
@@ -654,7 +654,7 @@ jobs:
 
           APP_NAME="AnymeX"
           if [[ "${{ github.event.inputs.build_type }}" == "alpha" ]]; then
-            APP_NAME="AnymeX α"
+            APP_NAME="AnymeX Alpha"
           fi
 
           cat > AppDir/anymex.desktop << EOF
@@ -777,7 +777,7 @@ jobs:
           APP_NAME=$(basename "$APP_PATH" .app)
           DMG_VOL_NAME="$APP_NAME"
           if [[ "${{ github.event.inputs.build_type }}" == "alpha" ]]; then
-            DMG_VOL_NAME="AnymeX α"
+            DMG_VOL_NAME="AnymeX Alpha"
           fi
 
           mkdir -p temp_dir build/macos/Release

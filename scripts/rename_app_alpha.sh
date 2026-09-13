@@ -38,7 +38,7 @@ OLD_DIR="com/ryan/anymex"
 NEW_DIR="com/ryan/anymexalpha"
 
 OLD_APP_NAME="AnymeX"
-NEW_APP_NAME="AnymeX α"
+NEW_APP_NAME="AnymeX Alpha"
 
 ANDROID_SRC="android/app/src/main/kotlin"
 MANIFEST_FILE="android/app/src/main/AndroidManifest.xml"
@@ -236,7 +236,7 @@ DART_MAIN_FILE="lib/main.dart"
 
 if [ -f "$DART_MAIN_FILE" ]; then
   # Update the MaterialApp title. This handles both single and double quotes and optional whitespace.
-  sed "${SED_INPLACE[@]}" -E "s|title:[[:space:]]*['\"]AnymeX['\"]|title: \"AnymeX α\"|g" "$DART_MAIN_FILE"
+  sed "${SED_INPLACE[@]}" -E "s|title:[[:space:]]*['\"]AnymeX['\"]|title: \"AnymeX Alpha\"|g" "$DART_MAIN_FILE"
   log_success "Updated MaterialApp title in $DART_MAIN_FILE"
 else
   log_warn "Main Dart file not found at $DART_MAIN_FILE. Skipping Dart title update."
@@ -364,7 +364,7 @@ if [ -f "pubspec.yaml" ]; then
   sed "${SED_INPLACE[@]}" "s|id: 8fbd47cb-d6e1-5343-a9f6-61661647c94c|id: 8a731080-7c84-11f1-9870-e931f9371c6b|g" pubspec.yaml
   log_success "Updated inno_bundle GUID (alpha)"
 
-  # Change the installer name so it installs to a separate folder (e.g. "AnymeX α")
+  # Change the installer name so it installs to a separate folder (e.g. "AnymeX Alpha")
   sed "${SED_INPLACE[@]}" "s|name: AnymeX$|name: $NEW_APP_NAME|g" pubspec.yaml
   log_success "Updated inno_bundle name to $NEW_APP_NAME"
 
