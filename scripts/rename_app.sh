@@ -286,22 +286,6 @@ if [ -f "$DART_UPDATER_FILE" ]; then
   }' "$DART_UPDATER_FILE"
 
   log_success "Updated _getCurrentVersion() to return $VERSION_WITHOUT_V"
-
-  # Show the full update popup (bottom sheet) for beta builds instead of a snackbar.
-  # isBetaApp itself is untouched (still feeds effectiveIsBeta for fetch/compare logic);
-  # this only replaces what happens when an update IS available.
-  sed "${SED_INPLACE[@]}" '/if (isBetaApp) {/,/^          }$/c\
-          if (context.mounted) {\
-            _showUpdateBottomSheet(\
-              context,\
-              currentVersion,\
-              latestRelease['"'"'tag_name'"'"'] ?? '"'"''"'"',\
-              latestRelease['"'"'body'"'"'] ?? '"'"''"'"',\
-              downloadUrls,\
-            );\
-          }' "$DART_UPDATER_FILE"
-
-  log_success "Beta builds now show the update popup instead of a snackbar"
 else
   log_warn "Updater file not found at $DART_UPDATER_FILE. Skipping update checker updates."
 fi
