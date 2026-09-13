@@ -286,23 +286,6 @@ if [ -f "$DART_UPDATER_FILE" ]; then
   }' "$DART_UPDATER_FILE"
 
   log_success "Updated _getCurrentVersion() to return $VERSION_WITHOUT_V"
-
-  # Add iteration comparison logic before the final Logger.i line in _shouldUpdate()
-  # This handles: "3.0.4+1-beta" vs "3.0.4+2-beta" -> detects +2 > +1 as an update
-  sed "${SED_INPLACE[@]}" '/Logger.i('"'"'Current version/i\
-    // Compare iterations if semver and tag type are the same (e.g. beta+1 vs beta+2)\
-    final currentTagParts = (currentSplit.length == 2 ? currentSplit[1].toLowerCase() : '"'"''"'"').split('"'"'+'"'"');\
-    final latestTagParts = (latestSplit.length == 2 ? latestSplit[1].toLowerCase() : '"'"''"'"').split('"'"'+'"'"');\
-    if (currentTagParts[0] == latestTagParts[0] && currentTagParts[0].isNotEmpty) {\
-      final currentIteration = currentTagParts.length > 1 ? (int.tryParse(currentTagParts[1]) ?? 0) : 0;\
-      final latestIteration = latestTagParts.length > 1 ? (int.tryParse(latestTagParts[1]) ?? 0) : 0;\
-      if (latestIteration > currentIteration) return true;\
-      if (latestIteration < currentIteration) return false;\
-    }\
-\
-' "$DART_UPDATER_FILE"
-
-  log_success "Added iteration comparison logic to _shouldUpdate()"
 else
   log_warn "Updater file not found at $DART_UPDATER_FILE. Skipping update checker updates."
 fi
