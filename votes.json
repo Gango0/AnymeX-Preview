@@ -1255,5 +1255,16 @@
     ],
     "total_upvotes": 0,
     "total_downvotes": 1
+  },
+  "manga:34632": {
+    "media_type": "manga",
+    "anilist_id": 34632,
+    "title": "Goodnight Punpun",
+    "upvotes": [
+      "al:7798951"
+    ],
+    "downvotes": [],
+    "total_upvotes": 1,
+    "total_downvotes": 0
   }
 }
