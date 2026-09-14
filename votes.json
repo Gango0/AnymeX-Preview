@@ -1266,5 +1266,16 @@
     "downvotes": [],
     "total_upvotes": 1,
     "total_downvotes": 0
+  },
+  "manga:74489": {
+    "media_type": "manga",
+    "anilist_id": 74489,
+    "title": "Houseki no Kuni",
+    "upvotes": [
+      "al:7798951"
+    ],
+    "downvotes": [],
+    "total_upvotes": 1,
+    "total_downvotes": 0
   }
 }
