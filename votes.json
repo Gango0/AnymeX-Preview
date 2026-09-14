@@ -1244,5 +1244,16 @@
     ],
     "total_upvotes": 0,
     "total_downvotes": 1
+  },
+  "anime:181444": {
+    "media_type": "anime",
+    "anilist_id": 181444,
+    "title": "The Fragrant Flower Blooms With Dignity",
+    "upvotes": [],
+    "downvotes": [
+      "al:7651443"
+    ],
+    "total_upvotes": 0,
+    "total_downvotes": 1
   }
 }
