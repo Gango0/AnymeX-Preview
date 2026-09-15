@@ -7972,5 +7972,71 @@
     "poster": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx181444-Ut9DDUZdfHwg.jpg",
     "score": 84,
     "nsfw": false
+  },
+  {
+    "anilist_id": null,
+    "mal_id": null,
+    "title": "Unknown",
+    "author": "CFabi11",
+    "reason": "Peak romance. The characters and the story are amazing",
+    "reasons": [
+      {
+        "discord_id": null,
+        "discord_username": null,
+        "user": {
+          "discord": {
+            "id": null,
+            "username": null,
+            "avatar": null
+          },
+          "anilist": {
+            "id": 8140183,
+            "username": "CFabi11",
+            "avatar": "https://s4.anilist.co/file/anilistcdn/user/avatar/large/b8140183-7TCw36sVA3FD.jpg"
+          },
+          "mal": {
+            "id": null,
+            "username": null,
+            "avatar": null
+          },
+          "simkl": {
+            "id": null,
+            "username": null,
+            "avatar": null
+          },
+          "isAdmin": false
+        },
+        "author": "CFabi11",
+        "text": "Peak romance. The characters and the story are amazing",
+        "added_at": "2026-09-15T20:26:57Z"
+      }
+    ],
+    "user": {
+      "discord": {
+        "id": null,
+        "username": null,
+        "avatar": null
+      },
+      "anilist": {
+        "id": 8140183,
+        "username": "CFabi11",
+        "avatar": "https://s4.anilist.co/file/anilistcdn/user/avatar/large/b8140183-7TCw36sVA3FD.jpg"
+      },
+      "mal": {
+        "id": null,
+        "username": null,
+        "avatar": null
+      },
+      "simkl": {
+        "id": null,
+        "username": null,
+        "avatar": null
+      },
+      "isAdmin": false
+    },
+    "added_by_discord_id": null,
+    "poster": "",
+    "score": "N/A",
+    "nsfw": false
   }
 ]
