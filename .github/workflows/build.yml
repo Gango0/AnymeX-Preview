@@ -807,7 +807,7 @@ jobs:
             $content = Get-Content $issFile -Raw
             # Fix ALL exe references: inno_bundle uses display name (AnymeX Beta.exe)
             # but CMake outputs anymex_beta.exe. Use broad regex to catch both.
-            $content = $content -replace 'AnymeX[^a-zA-Z0-9]*?\.exe', 'anymex_beta.exe'
+            $content = $content -replace 'AnymeX[^"]*?\.exe', 'anymex_beta.exe'
             Set-Content $issFile -Value $content -NoNewline
             Write-Host "Updated Inno Setup script for beta build"
           }
