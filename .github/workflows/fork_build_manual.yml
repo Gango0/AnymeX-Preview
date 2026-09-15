@@ -183,22 +183,22 @@ jobs:
           echo "  Copying Alpha Assets"
           echo "════════════════════════════════════════════"
 
-          cp -r alpha-repo/logo/android/app/src/main/res/* main-repo/android/app/src/main/res/
+          cp -r alpha-repo/logo_alpha/android/app/src/main/res/* main-repo/android/app/src/main/res/
           echo "✅ Android icons copied"
 
-          cp -r alpha-repo/logo/ios/Runner/Assets.xcassets/AppIcon.appiconset/* main-repo/ios/Runner/Assets.xcassets/AppIcon.appiconset/
+          cp -r alpha-repo/logo_alpha/ios/Runner/Assets.xcassets/AppIcon.appiconset/* main-repo/ios/Runner/Assets.xcassets/AppIcon.appiconset/
           echo "✅ iOS icons copied"
 
-          cp -r alpha-repo/logo/macos/Runner/Assets.xcassets/AppIcon.appiconset/* main-repo/macos/Runner/Assets.xcassets/AppIcon.appiconset/
+          cp -r alpha-repo/logo_alpha/macos/Runner/Assets.xcassets/AppIcon.appiconset/* main-repo/macos/Runner/Assets.xcassets/AppIcon.appiconset/
           echo "✅ macOS icons copied"
 
-          cp alpha-repo/logo/windows/runner/resources/app_icon.ico main-repo/windows/runner/resources/
-          cp alpha-repo/logo/anymex.ico main-repo/
+          cp alpha-repo/logo_alpha/windows/runner/resources/app_icon.ico main-repo/windows/runner/resources/
+          cp alpha-repo/logo_alpha/anymex.ico main-repo/
           echo "✅ Windows icons copied"
 
           mkdir -p main-repo/assets/images
-          cp alpha-repo/assets/images/logo.png main-repo/assets/images/
-          cp alpha-repo/assets/images/logo_transparent.png main-repo/assets/images/
+          cp alpha-repo/assets_alpha/images/logo.png main-repo/assets/images/
+          cp alpha-repo/assets_alpha/images/logo_transparent.png main-repo/assets/images/
           echo "✅ Linux icons copied"
 
           cp alpha-repo/scripts/rename_app_alpha.sh main-repo/scripts/
