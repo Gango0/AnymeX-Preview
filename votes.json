@@ -638,9 +638,11 @@
       "al:7648518",
       "al:7657898"
     ],
-    "downvotes": [],
+    "downvotes": [
+      "al:7278577"
+    ],
     "total_upvotes": 3,
-    "total_downvotes": 0
+    "total_downvotes": 1
   },
   "anime:20789": {
     "media_type": "anime",
