@@ -680,7 +680,7 @@ jobs:
 
           if ("${{ github.event.inputs.build_type }}" -eq "alpha") {
             $content = Get-Content $issFile -Raw
-            $content = $content -replace '\banymex\.exe\b', 'anymex_alpha.exe'
+            $content = $content -replace 'AnymeX Alpha\.exe', 'anymex_alpha.exe'
             $content = $content -replace '"AnymeX"', '"AnymeX Alpha"'
             $content = $content -replace 'AppName=AnymeX', 'AppName=AnymeX Alpha'
             Set-Content $issFile -Value $content -NoNewline

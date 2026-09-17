@@ -805,13 +805,16 @@ jobs:
           if ("${{ github.ref_name }}" -like "*-beta") {
             Write-Host "Fixing installer for beta build..."
             $content = Get-Content $issFile -Raw
-            # inno_bundle's [Icons]/[Run]/registry entries use pubspecNameDotExe,
-            # which is derived from the TOP-LEVEL pubspec.yaml "name:" field
-            # (always "anymex", never renamed for beta) -> literally "anymex.exe".
-            # The real compiled binary is "anymex_beta.exe" (CMake BINARY_NAME).
-            # The [Files] Source: line already uses the real absolute path to the
-            # real binary and does NOT need fixing - do not touch it.
-            $content = $content -replace '\banymex\.exe\b', 'anymex_beta.exe'
+            # inno_bundle 0.7.4's [Icons]/[Run]/UninstallDisplayIcon entries
+            # unconditionally reference config.exeName ("$name.exe" -> the
+            # inno_bundle display name + .exe, e.g. "AnymeX Beta.exe"). It only
+            # gets rewritten to the real compiled binary name if the on-disk
+            # file is literally named "$pubspecName.exe" ("anymex.exe") - but
+            # rename_app.sh overrides CMake's BINARY_NAME to "anymex_beta", so
+            # that match never happens and the shortcuts point at a file that
+            # was never created. The [Files] Source: line already references
+            # the real absolute path to the real binary - do not touch it.
+            $content = $content -replace 'AnymeX Beta\.exe', 'anymex_beta.exe'
             Set-Content $issFile -Value $content -NoNewline
             Write-Host "Updated Inno Setup script for beta build"
           }
