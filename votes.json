@@ -1287,5 +1287,16 @@
     "downvotes": [],
     "total_upvotes": 1,
     "total_downvotes": 0
+  },
+  "anime:21857": {
+    "media_type": "anime",
+    "anilist_id": 21857,
+    "title": "Masamune-kun's Revenge",
+    "upvotes": [
+      "al:7278577"
+    ],
+    "downvotes": [],
+    "total_upvotes": 1,
+    "total_downvotes": 0
   }
 }
