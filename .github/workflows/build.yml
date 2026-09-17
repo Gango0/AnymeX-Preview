@@ -805,9 +805,13 @@ jobs:
           if ("${{ github.ref_name }}" -like "*-beta") {
             Write-Host "Fixing installer for beta build..."
             $content = Get-Content $issFile -Raw
-            # Fix ALL exe references: inno_bundle uses display name (AnymeX Beta.exe)
-            # but CMake outputs anymex_beta.exe. Use broad regex to catch both.
-            $content = $content -replace 'AnymeX[^"]*?\.exe', 'anymex_beta.exe'
+            # inno_bundle's [Icons]/[Run]/registry entries use pubspecNameDotExe,
+            # which is derived from the TOP-LEVEL pubspec.yaml "name:" field
+            # (always "anymex", never renamed for beta) -> literally "anymex.exe".
+            # The real compiled binary is "anymex_beta.exe" (CMake BINARY_NAME).
+            # The [Files] Source: line already uses the real absolute path to the
+            # real binary and does NOT need fixing - do not touch it.
+            $content = $content -replace '\banymex\.exe\b', 'anymex_beta.exe'
             Set-Content $issFile -Value $content -NoNewline
             Write-Host "Updated Inno Setup script for beta build"
           }
