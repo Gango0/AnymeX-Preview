@@ -8038,5 +8038,71 @@
     "poster": "",
     "score": "N/A",
     "nsfw": false
+  },
+  {
+    "anilist_id": null,
+    "mal_id": null,
+    "title": "Unknown",
+    "author": "Subaru14",
+    "reason": "One of the best manga i ever read. But this manga is 18+ 😉",
+    "reasons": [
+      {
+        "discord_id": null,
+        "discord_username": null,
+        "user": {
+          "discord": {
+            "id": null,
+            "username": null,
+            "avatar": null
+          },
+          "anilist": {
+            "id": 7874270,
+            "username": "Subaru14",
+            "avatar": "https://s4.anilist.co/file/anilistcdn/user/avatar/large/b7874270-B2MpPNn5IdWz.png"
+          },
+          "mal": {
+            "id": null,
+            "username": null,
+            "avatar": null
+          },
+          "simkl": {
+            "id": null,
+            "username": null,
+            "avatar": null
+          },
+          "isAdmin": false
+        },
+        "author": "Subaru14",
+        "text": "One of the best manga i ever read. But this manga is 18+ 😉",
+        "added_at": "2026-09-19T14:56:43Z"
+      }
+    ],
+    "user": {
+      "discord": {
+        "id": null,
+        "username": null,
+        "avatar": null
+      },
+      "anilist": {
+        "id": 7874270,
+        "username": "Subaru14",
+        "avatar": "https://s4.anilist.co/file/anilistcdn/user/avatar/large/b7874270-B2MpPNn5IdWz.png"
+      },
+      "mal": {
+        "id": null,
+        "username": null,
+        "avatar": null
+      },
+      "simkl": {
+        "id": null,
+        "username": null,
+        "avatar": null
+      },
+      "isAdmin": false
+    },
+    "added_by_discord_id": null,
+    "poster": "",
+    "score": "N/A",
+    "nsfw": false
   }
 ]
