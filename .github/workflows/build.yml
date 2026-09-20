@@ -784,7 +784,6 @@ jobs:
             exit 1
           }
           flutter pub get
-          dart run jni:setup
           pwsh ../beta-repo/scripts/setup_libtorrent_windows.ps1 -Arch x64
           if ($LASTEXITCODE -ne 0) { exit 1 }
           dart run inno_bundle:build --release 2>&1 | Select-String -Pattern "Compile aborted" -NotMatch
