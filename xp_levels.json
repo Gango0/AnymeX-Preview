@@ -1,0 +1,112 @@
+[
+  {
+    "level": 1,
+    "xp": 0,
+    "title": "Novice",
+    "icons": {
+      "badge": "https://cdn.jsdelivr.net/gh/mezotv/discord-badges@main/assets/subscriptions/badges/bronze.png",
+      "gem": "https://cdn.jsdelivr.net/gh/mezotv/discord-badges@main/assets/boosts/discord-boost-1.svg",
+      "sword": "https://cdn.jsdelivr.net/gh/mezotv/discord-badges@main/assets/game-time/casual.svg",
+      "screen": "https://cdn.jsdelivr.net/gh/mezotv/discord-badges@main/assets/streaming/newcomer.svg"
+    }
+  },
+  {
+    "level": 2,
+    "xp": 100,
+    "title": "Casual",
+    "icons": {
+      "badge": "https://cdn.jsdelivr.net/gh/mezotv/discord-badges@main/assets/subscriptions/badges/silver.png",
+      "gem": "https://cdn.jsdelivr.net/gh/mezotv/discord-badges@main/assets/boosts/discord-boost-2.svg",
+      "sword": "https://cdn.jsdelivr.net/gh/mezotv/discord-badges@main/assets/game-time/recreational.svg",
+      "screen": "https://cdn.jsdelivr.net/gh/mezotv/discord-badges@main/assets/streaming/fledgling.svg"
+    }
+  },
+  {
+    "level": 3,
+    "xp": 500,
+    "title": "Otaku",
+    "icons": {
+      "badge": "https://cdn.jsdelivr.net/gh/mezotv/discord-badges@main/assets/subscriptions/badges/gold.png",
+      "gem": "https://cdn.jsdelivr.net/gh/mezotv/discord-badges@main/assets/boosts/discord-boost-3.svg",
+      "sword": "https://cdn.jsdelivr.net/gh/mezotv/discord-badges@main/assets/game-time/seasoned.svg",
+      "screen": "https://cdn.jsdelivr.net/gh/mezotv/discord-badges@main/assets/streaming/breakout.svg"
+    }
+  },
+  {
+    "level": 4,
+    "xp": 1500,
+    "title": "Senpai",
+    "icons": {
+      "badge": "https://cdn.jsdelivr.net/gh/mezotv/discord-badges@main/assets/subscriptions/badges/platinum.png",
+      "gem": "https://cdn.jsdelivr.net/gh/mezotv/discord-badges@main/assets/boosts/discord-boost-4.svg",
+      "sword": "https://cdn.jsdelivr.net/gh/mezotv/discord-badges@main/assets/game-time/dedicated.svg",
+      "screen": "https://cdn.jsdelivr.net/gh/mezotv/discord-badges@main/assets/streaming/standout.svg"
+    }
+  },
+  {
+    "level": 5,
+    "xp": 3500,
+    "title": "Special Grade",
+    "icons": {
+      "badge": "https://cdn.jsdelivr.net/gh/mezotv/discord-badges@main/assets/subscriptions/badges/diamond.png",
+      "gem": "https://cdn.jsdelivr.net/gh/mezotv/discord-badges@main/assets/boosts/discord-boost-5.svg",
+      "sword": "https://cdn.jsdelivr.net/gh/mezotv/discord-badges@main/assets/game-time/committed.svg",
+      "screen": "https://cdn.jsdelivr.net/gh/mezotv/discord-badges@main/assets/streaming/trendsetter.svg"
+    }
+  },
+  {
+    "level": 6,
+    "xp": 7500,
+    "title": "Hashira",
+    "icons": {
+      "badge": "https://cdn.jsdelivr.net/gh/mezotv/discord-badges@main/assets/subscriptions/badges/emerald.png",
+      "gem": "https://cdn.jsdelivr.net/gh/mezotv/discord-badges@main/assets/boosts/discord-boost-6.svg",
+      "sword": "https://cdn.jsdelivr.net/gh/mezotv/discord-badges@main/assets/game-time/devoted.svg",
+      "screen": "https://cdn.jsdelivr.net/gh/mezotv/discord-badges@main/assets/streaming/star.svg"
+    }
+  },
+  {
+    "level": 7,
+    "xp": 15000,
+    "title": "Hokage",
+    "icons": {
+      "badge": "https://cdn.jsdelivr.net/gh/mezotv/discord-badges@main/assets/subscriptions/badges/ruby.png",
+      "gem": "https://cdn.jsdelivr.net/gh/mezotv/discord-badges@main/assets/boosts/discord-boost-7.svg",
+      "sword": "https://cdn.jsdelivr.net/gh/mezotv/discord-badges@main/assets/game-time/serious.svg",
+      "screen": "https://cdn.jsdelivr.net/gh/mezotv/discord-badges@main/assets/streaming/sensation.svg"
+    }
+  },
+  {
+    "level": 8,
+    "xp": 30000,
+    "title": "Yonko",
+    "icons": {
+      "badge": "https://cdn.jsdelivr.net/gh/mezotv/discord-badges@main/assets/subscriptions/badges/opal.png",
+      "gem": "https://cdn.jsdelivr.net/gh/mezotv/discord-badges@main/assets/boosts/discord-boost-8.svg",
+      "sword": "https://cdn.jsdelivr.net/gh/mezotv/discord-badges@main/assets/game-time/ironclad.svg",
+      "screen": "https://cdn.jsdelivr.net/gh/mezotv/discord-badges@main/assets/streaming/headliner.svg"
+    }
+  },
+  {
+    "level": 9,
+    "xp": 50000,
+    "title": "Shadow Monarch",
+    "icons": {
+      "badge": "https://cdn.jsdelivr.net/gh/mezotv/discord-badges@main/assets/orb.svg",
+      "gem": "https://cdn.jsdelivr.net/gh/mezotv/discord-badges@main/assets/boosts/discord-boost-9.svg",
+      "sword": "https://cdn.jsdelivr.net/gh/mezotv/discord-badges@main/assets/game-time/unshakeable.svg",
+      "screen": "https://cdn.jsdelivr.net/gh/mezotv/discord-badges@main/assets/streaming/phenomenon.svg"
+    }
+  },
+  {
+    "level": 10,
+    "xp": 100000,
+    "title": "The Eminence",
+    "icons": {
+      "badge": "https://cdn.jsdelivr.net/gh/mezotv/discord-badges@main/assets/server/crown.svg",
+      "gem": "https://cdn.jsdelivr.net/gh/mezotv/discord-badges@main/assets/server/crown.svg",
+      "sword": "https://cdn.jsdelivr.net/gh/mezotv/discord-badges@main/assets/game-time/eternal.svg",
+      "screen": "https://cdn.jsdelivr.net/gh/mezotv/discord-badges@main/assets/streaming/visionary.svg"
+    }
+  }
+]
