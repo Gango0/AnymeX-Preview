@@ -1299,5 +1299,16 @@
     "downvotes": [],
     "total_upvotes": 1,
     "total_downvotes": 0
+  },
+  "anime:196218": {
+    "media_type": "anime",
+    "anilist_id": 196218,
+    "title": "The Frontier Lord Begins with Zero Subjects",
+    "upvotes": [
+      "mal:11828194"
+    ],
+    "downvotes": [],
+    "total_upvotes": 1,
+    "total_downvotes": 0
   }
 }
