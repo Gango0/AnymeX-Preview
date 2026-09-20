@@ -696,13 +696,10 @@ jobs:
         run: |
           cd main-repo
           flutter pub get
-          dart run jni:setup
           flutter build linux --release
           rm -rf AppDir && mkdir -p AppDir/usr/{bin,share/icons/hicolor/256x256/apps,lib}
           cp -r build/linux/x64/release/bundle/* AppDir/usr/bin/
-          if [ -d "build/jni_libs" ]; then
-            cp build/jni_libs/*.so AppDir/usr/bin/lib/ 2>/dev/null || true
-          fi
+          
           cp assets/images/logo.png AppDir/usr/share/icons/hicolor/256x256/apps/anymex.png
           cp assets/images/logo.png AppDir/anymex.png
           
@@ -840,7 +837,6 @@ jobs:
             brew install maven
           fi
           flutter pub get
-          dart run jni:setup
           flutter build macos --release
 
           echo "🔍 Searching for built .app..."
