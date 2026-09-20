@@ -502,7 +502,11 @@ jobs:
           {
             echo "### 🆕 Beta Changelog"
             echo ""
-            echo "> ⚠️ **This is a Beta Release.** Features and fixes in this version are still under testing and may contain bugs or unexpected behavior. Please report any issues you encounter. Do not use in production."
+            echo "---"
+            echo ""
+            echo "⚠️ **This is a Beta Release.** Features and fixes in this version are still under testing and may contain bugs or unexpected behavior. Please report any issues you encounter. Do not use in production."
+            echo ""
+            echo "---"
             echo ""
             [ -n "$FEATURES" ] && echo -e "### 🌟 Features\n$FEATURES\n"
             [ -n "$BUG_FIXES" ] && echo -e "### 🔧 Bug Fixes & Improvements\n$BUG_FIXES\n"
