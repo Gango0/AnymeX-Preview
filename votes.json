@@ -1312,5 +1312,16 @@
     "downvotes": [],
     "total_upvotes": 1,
     "total_downvotes": 0
+  },
+  "anime:106240": {
+    "media_type": "anime",
+    "anilist_id": 106240,
+    "title": "HELLO WORLD",
+    "upvotes": [
+      "mal:20861581"
+    ],
+    "downvotes": [],
+    "total_upvotes": 1,
+    "total_downvotes": 0
   }
 }
