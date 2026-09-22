@@ -1324,5 +1324,16 @@
     "downvotes": [],
     "total_upvotes": 1,
     "total_downvotes": 0
+  },
+  "anime:20599": {
+    "media_type": "anime",
+    "anilist_id": 20599,
+    "title": "The World is Still Beautiful",
+    "upvotes": [
+      "al:7278577"
+    ],
+    "downvotes": [],
+    "total_upvotes": 1,
+    "total_downvotes": 0
   }
 }
