@@ -1,0 +1,99 @@
+{
+  "name": "AnymeX Beta",
+  "identifier": "com.ryan.anymexbeta",
+  "headerURL": "https://raw.githubusercontent.com/Shebyyy/AnymeX-Preview/refs/heads/beta/repo/images/headers/source_header.webp",
+  "website": "https://github.com/Shebyyy/AnymeX-Preview",
+  "iconURL": "https://raw.githubusercontent.com/Shebyyy/AnymeX-Preview/refs/heads/beta/repo/images/icons/anymex_beta.webp",
+  "subtitle": "Beta builds of AnymeX, straight off the oven",
+  "description": "This is the beta source for AnymeX.\n\nBeta builds install alongside the stable app and may be unstable or contain bugs.\n\nFor full details, check the GitHub repository:\nhttps://github.com/Shebyyy/AnymeX-Preview",
+  "tintColor": "36A2FD",
+  "apps": [
+    {
+      "beta": true,
+      "name": "AnymeX Beta",
+      "bundleIdentifier": "com.ryan.anymexbeta",
+      "developerName": "RyanYuuki",
+      "subtitle": "Multiservice tracking client (beta)",
+      "version": "3.1.8",
+      "buildVersion": "602",
+      "versionDate": "2026-09-22T22:23:38Z",
+      "versionDescription": "\ud83c\udd95 Beta Changelog\n\n---\n\n\u26a0\ufe0f This is a Beta Release. Features and fixes in this version are still under testing and may contain bugs or unexpected behavior. Please report any issues you encounter. Do not use in production.\n\n---\n\n\ud83c\udfa8 Style Changes\n\u2022 minimal ui for new episode releases by @RyanYuuki\n\n\ud83e\uddf9 Chores & Documentation\n\u2022 update sideloading source by @ghost\n\u2022 bump version to v3.1.8 (patch release) by @RyanYuuki",
+      "downloadURL": "https://github.com/Shebyyy/AnymeX-Preview/releases/download/v3.1.8-beta/AnymeX-iOS-v3.1.8-beta.ipa",
+      "localizedDescription": "AnymeX is a multiservice tracking client, with AniList, MyAnimeList & Simkl support! This is the beta channel, installable side-by-side with the stable app.",
+      "iconURL": "https://raw.githubusercontent.com/Shebyyy/AnymeX-Preview/refs/heads/beta/repo/images/icons/anymex_beta.webp",
+      "tintColor": "36A2FD",
+      "category": "entertainment",
+      "size": 38724340,
+      "minOSVersion": "13.0",
+      "screenshotURLs": [
+        "https://raw.githubusercontent.com/Shebyyy/AnymeX-Preview/refs/heads/beta/repo/images/screenshots/image_0.webp",
+        "https://raw.githubusercontent.com/Shebyyy/AnymeX-Preview/refs/heads/beta/repo/images/screenshots/image_1.webp",
+        "https://raw.githubusercontent.com/Shebyyy/AnymeX-Preview/refs/heads/beta/repo/images/screenshots/image_2.webp"
+      ],
+      "versions": [
+        {
+          "version": "3.1.8",
+          "date": "2026-09-22T22:23:38Z",
+          "localizedDescription": "\ud83c\udd95 Beta Changelog\n\n---\n\n\u26a0\ufe0f This is a Beta Release. Features and fixes in this version are still under testing and may contain bugs or unexpected behavior. Please report any issues you encounter. Do not use in production.\n\n---\n\n\ud83c\udfa8 Style Changes\n\u2022 minimal ui for new episode releases by @RyanYuuki\n\n\ud83e\uddf9 Chores & Documentation\n\u2022 update sideloading source by @ghost\n\u2022 bump version to v3.1.8 (patch release) by @RyanYuuki",
+          "downloadURL": "https://github.com/Shebyyy/AnymeX-Preview/releases/download/v3.1.8-beta/AnymeX-iOS-v3.1.8-beta.ipa",
+          "size": 38724340,
+          "buildVersion": "602",
+          "minOSVersion": "13.0"
+        },
+        {
+          "version": "3.1.7",
+          "date": "2026-09-20T11:16:33Z",
+          "localizedDescription": "\ud83c\udd95 Beta Changelog\n\n---\n\n\u26a0\ufe0f This is a Beta Release. Features and fixes in this version are still under testing and may contain bugs or unexpected behavior. Please report any issues you encounter. Do not use in production.\n\n---\n\n\ud83c\udf1f Features\n\u2022 full cast support by @RyanYuuki\n\u2022 option to hide/show continue watching by @RyanYuuki\n\u2022 enhanced orientation control by @RyanYuuki\n\n\ud83d\udd27 Bug Fixes & Improvements\n\u2022 repeated search calls on errror fixed by @RyanYuuki\n\u2022 fixed tracking issues and new episode release stale states by @RyanYuuki\n\u2022 fixed speed and audio pane not showing for downloaded media by @RyanYuuki\n\u2022 overflow fix on anime and manga list by @RyanYuuki\n\u2022 fixed repos showing as added yet empty list by @RyanYuuki\n\u2022 wait until login info is loaded for deeplink by @RyanYuuki\n\u2022 fixed animation delay for tabs on calendar page by @RyanYuuki\n\u2022 safe guarding media type by @RyanYuuki\n\n\ud83c\udfa8 Style Changes\n\u2022 little improvement to info below title on media details page by @RyanYuuki\n\n\ud83e\uddf9 Chores & Documentation\n\u2022 dropped bridge mode by @RyanYuuki",
+          "downloadURL": "https://github.com/Shebyyy/AnymeX-Preview/releases/download/v3.1.7%2B5-beta/AnymeX-iOS-v3.1.7%2B5-beta.ipa",
+          "size": 38737500,
+          "buildVersion": "601",
+          "minOSVersion": "13.0"
+        },
+        {
+          "version": "3.1.7",
+          "date": "2026-09-17T17:41:00Z",
+          "localizedDescription": "\ud83c\udd95 Beta Changelog\r\n\r\n---\r\n\u26a0\ufe0f This is a Beta Release. Features and fixes in this version are still under testing and may contain bugs or unexpected behavior. Please report any issues you encounter. Do not use in production.\r\n\r\n---\r\n\r\n\ud83d\udd27 Bug Fixes & Improvements\r\n\u2022 fixed dialog jank when keyboard opens by @RyanYuuki\r\n\u2022 : fixed ui not reflecting instant changes and header ui overflow by @RyanYuuki\r\n\u2022 fixed no sound issue on some sources by @RyanYuuki",
+          "downloadURL": "https://github.com/Shebyyy/AnymeX-Preview/releases/download/v3.1.7%2B4-beta/AnymeX-iOS-v3.1.7%2B4-beta.ipa",
+          "size": 38674887,
+          "buildVersion": "599",
+          "minOSVersion": "13.0"
+        },
+        {
+          "version": "3.1.7",
+          "date": "2026-09-17T01:39:19Z",
+          "localizedDescription": "\ud83c\udd95 Beta Changelog\n\n> \u26a0\ufe0f This is a Beta Release. Features and fixes in this version are still under testing and may contain bugs or unexpected behavior. Please report any issues you encounter. Do not use in production.\n\n\ud83d\udd27 Bug Fixes & Improvements\n\u2022 fixed stale condition of bridge by @RyanYuuki\n\u2022 fixed downloader causing issues on background by @RyanYuuki\n\u2022 fixed app not working when offline by @RyanYuuki\n\u2022 fixed season wise bindings for proper tracking across seasons by @RyanYuuki",
+          "downloadURL": "https://github.com/Shebyyy/AnymeX-Preview/releases/download/v3.1.7%2B3-beta/AnymeX-iOS-v3.1.7%2B3-beta.ipa",
+          "size": 38681093,
+          "buildVersion": "598",
+          "minOSVersion": "13.0"
+        },
+        {
+          "version": "3.1.7",
+          "date": "2026-09-13T20:29:23Z",
+          "localizedDescription": "\ud83c\udd95 Beta Changelog\n\n> \u26a0\ufe0f This is a Beta Release. Features and fixes in this version are still under testing and may contain bugs or unexpected behavior. Please report any issues you encounter. Do not use in production.\n\n\ud83c\udf1f Features\n\u2022 Full download support on metadata services, lots of fixes by @RyanYuuki\n\u2022 continue watching bar on home by @RyanYuuki\n\u2022 improved episode releases cards by @RyanYuuki\n\u2022 fcm support so i can notify users anytime i want by @RyanYuuki\n\u2022 external font support (bring your own font for the entire app) by @RyanYuuki\n\u2022 add Smoke Trace logo animation, custom animated logo support (578) by @Shebyyy\n\n\ud83d\udd27 Bug Fixes & Improvements\n\u2022 fixed torrent by @RyanYuuki\n\u2022 fixed a fatal isar error when saving stats by @RyanYuuki\n\u2022 fixed swipe indicator theme not persisting by @RyanYuuki\n\u2022 fixed welcome dialog reappearing by @RyanYuuki\n\n\ud83d\ude80 Performance Improvements\n\u2022 switched downloader to rhttp for faster download speed by @RyanYuuki",
+          "downloadURL": "https://github.com/Shebyyy/AnymeX-Preview/releases/download/v3.1.7%2B2-beta/AnymeX-iOS-v3.1.7%2B2-beta.ipa",
+          "size": 38684551,
+          "buildVersion": "596",
+          "minOSVersion": "13.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": []
+      }
+    }
+  ],
+  "news": [
+    {
+      "appID": "com.ryan.anymexbeta",
+      "title": "3.1.8-beta - 22 Sep",
+      "identifier": "release-3.1.8-beta",
+      "caption": "Update for AnymeX Beta now available!",
+      "date": "2026-09-22T22:23:38Z",
+      "tintColor": "36A2FD",
+      "imageURL": "https://raw.githubusercontent.com/Shebyyy/AnymeX-Preview/refs/heads/beta/repo/images/news/update.webp",
+      "notify": true,
+      "url": "https://github.com/Shebyyy/AnymeX-Preview/releases/tag/v3.1.8-beta"
+    }
+  ]
+}

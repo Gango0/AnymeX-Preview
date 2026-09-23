@@ -41,6 +41,27 @@ Beta builds are automatically generated from the main repository with a few key 
 
 ---
 
+## iOS Sideloading Source
+
+Add the beta source to your sideloading app of choice to get every new beta build as an in-app update.
+
+<div align="center">
+
+<a href="https://intradeus.github.io/http-protocol-redirector?r=altstore://source?url=https://raw.githubusercontent.com/Shebyyy/AnymeX-Preview/refs/heads/beta/repo/source.json"><img alt="AltStore Source" src="https://img.shields.io/badge/open_in_app-_?style=for-the-badge&label=AltStore&labelColor=black&color=36A2FD"></a>
+&nbsp;
+<a href="https://intradeus.github.io/http-protocol-redirector?r=feather://source/https://raw.githubusercontent.com/Shebyyy/AnymeX-Preview/refs/heads/beta/repo/source.json"><img alt="Feather Source" src="https://img.shields.io/badge/open_in_app-_?style=for-the-badge&label=Feather&labelColor=black&color=36A2FD"></a>
+&nbsp;
+<a href="https://intradeus.github.io/http-protocol-redirector?r=sidestore://source?url=https://raw.githubusercontent.com/Shebyyy/AnymeX-Preview/refs/heads/beta/repo/source.json"><img alt="SideStore Source" src="https://img.shields.io/badge/open_in_app-_?style=for-the-badge&label=SideStore&labelColor=black&color=36A2FD"></a>
+
+<a href="https://raw.githubusercontent.com/Shebyyy/AnymeX-Preview/refs/heads/beta/repo/source.json"><img alt="Direct URL" src="https://img.shields.io/badge/copy_%2F_paste-_?style=for-the-badge&label=Direct%20Source%20URL&labelColor=black&color=36A2FD"></a>
+
+</div>
+
+> [!NOTE]
+> The beta app installs alongside the stable one (`com.ryan.anymexbeta`), so adding this source will not touch an existing AnymeX install. The stable source lives in the [main repository](https://github.com/RyanYuuki/AnymeX#ios-sideloading-sources).
+
+---
+
 ## Main Project
 
 All source code, development, issues, and contributions live in the main repository:
